@@ -1,0 +1,23 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "description": "fastify crash course",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marahmanjs/fastify-mysql.git"
+  },
+  "keywords": [
+    "fastify",
+    "mysql"
+  ],
+  "author": "Anis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marahmanjs/fastify-mysql/issues"
+  },
+  "homepage": "https://github.com/marahmanjs/fastify-mysql#readme"
+}
