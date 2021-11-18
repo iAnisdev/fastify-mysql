@@ -1,12 +1,15 @@
+//init dotenv
+require('dotenv').config()
 const fastify = require('fastify')({ logger: true })
 
+require('./config/database')
+
+
+//register routes
+fastify.register(require('./routes/index'))
+fastify.register(require('./routes/auth'))
 
 const PORT = 3030
-
-// Declare a route
-fastify.get('/', async (request, reply) => {
-    return { hello: 'world' }
-  })
 
 const start = async () => {
     try {
