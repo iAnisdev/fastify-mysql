@@ -4,10 +4,20 @@ const fastify = require('fastify')({ logger: true })
 
 require('./config/database')
 
-
 //register routes
 fastify.register(require('./routes/index'))
 fastify.register(require('./routes/auth'))
+
+//fastify swagger
+fastify.register(require('fastify-swagger') , {
+    exposeRoute: true,
+    routePrefix: '/docs',
+    swagger:{
+        info: {
+            title: 'Todo API'
+        }
+    }
+})
 
 const PORT = 3030
 
